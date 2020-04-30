@@ -58,3 +58,36 @@ yarn start
 yarn build
 ```
 即可生成最终Chrome Extension文件。
+
+## 精简最终build文件
+
+build生成的最终文件，对于插件来说，有很多是不必要的。
+
+可删除以下文件：
+```
+    ├─ /images
+    ├─ /static
+    |  ├─ /css
+    |  |  ├─ content.css
+-   |  |  ├─ content.css.map
+    |  |  ├─ main.css
+-   |  |  └─ main.css.map
+    |  ├─ /js
+    |  |  ├─ background.js
+-   |  |  ├─ background.js.LICENSE.txt
+-   |  |  ├─ background.js.map
+    |  |  ├─ content.js
+-   |  |  ├─ content.js.LICENSE.txt
+-   |  |  ├─ content.js.map
+    |  |  ├─ main.js
+-   |  |  ├─ main.js.LICENSE.txt
+-   |  |  └─ main.js.map
+    |  ├─ /media
+-   ├─ asset-manifest.json
+    ├─ favicon.ico
+    ├─ index.html
+    ├─ insert.js
+    ├─ manifest.json
+-   ├─ precache-manifest.xxxxxxx.js
+-   ├─ service-worker.js
+```

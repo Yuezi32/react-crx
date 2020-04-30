@@ -10,7 +10,7 @@
   "manifest_version": 2,
   "page_action": {
     "default_icon": "images/icon.png",
-    "default_title": "新华媒体管家",
+    "default_title": "React CRX",
     "default_popup": "index.html"
   },
   "background": {
